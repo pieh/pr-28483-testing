@@ -1,0 +1,41 @@
+### Type definitions saved at 2020-12-22T12:45:31.784Z ###
+
+type MimeChildSchema implements Node @childOf(mimeTypes: ["application/wat-schema"], types: [], many: false) @dontInfer {
+  MimeChildSchema: Boolean
+}
+
+type MimeParentSchema implements Node @mimeTypes(types: ["application/wat-schema"]) @dontInfer {
+  MimeParentSchema: Boolean
+}
+
+type NoExtrasChildSchema implements Node @childOf(mimeTypes: [], types: ["NoExtrasParentSchema"], many: false) @dontInfer {
+  NoExtrasChildSchema: Boolean
+}
+
+type NoExtrasParentSchema implements Node @dontInfer {
+  NoExtrasParentSchema: Boolean
+}
+
+type StandaloneSchema implements Node @dontInfer {
+  StandaloneSchema: Boolean
+}
+
+type MimeChild implements Node @dontInfer {
+  MimeChild: Boolean
+}
+
+type MimeParent implements Node @dontInfer {
+  MimeParent: Boolean
+}
+
+type NoExtrasChild implements Node @dontInfer {
+  NoExtrasChild: Boolean
+}
+
+type NoExtrasParent implements Node @dontInfer {
+  NoExtrasParent: Boolean
+}
+
+type Standalone implements Node @dontInfer {
+  Standalone: Boolean
+}
